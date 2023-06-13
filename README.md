@@ -58,19 +58,19 @@ Example JSON body to create User
 - DELETE - ``` /api/user/:id  ```
  
 ** Friends **
-- PUT - ```/api/users/:id/friends/:id```
-- DELETE - ```/api/users/:id/friends/:id```
+- PUT - ```/api/user/:id/friends/:id```
+- DELETE - ```/api/user/:id/friends/:id```
  
 ** Thoughts **
-- POST - ```/api/thoughts```
-- GET - ```/api/thoughts```
-- GET - ```/api/thoughts/:id```
-- PUT - ```/api/thoughts/:id```
-- DELETE - ```/api/thoughts/:id ```
+- POST - ```/api/thought```
+- GET - ```/api/thought```
+- GET - ```/api/thought/:id```
+- PUT - ```/api/thought/:id```
+- DELETE - ```/api/thought/:id ```
  
 ** Reactions **
-- POST - ```/api/thoughts/:id/reactions```
-- DELETE -  ```/api/thoughts/:id/reactions```
+- POST - ```/api/thought/:id/reactions```
+- DELETE -  ```/api/thought/:id/reactions/:id```
 #
 ## How to Contribute
 For and suggestions or contributions you can reach me at my email address or you can clone to code and edit it the way it will suite you the best.
