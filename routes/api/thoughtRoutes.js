@@ -23,17 +23,17 @@ router.get('/', async (req, res) => {
 });
 //Update Single 
 router.put('/:id', async (req, res) => {
-    try {
-      const thoughtData = await Thought.updateOne(
-        { _id: req.params.id },
-        { $set: req.body, updatedAt: new Date() },
-        { runValidators: true, new: true },
-      );
-      res.status(200).json(thoughtData);
-    } catch (err) {
-      res.status(500).json(err);
-    };
-  });
+  try {
+    const thoughtData = await Thought.findOneAndUpdate(
+      { _id: req.params.id },
+      { $set: req.body, updatedAt: new Date() },
+      { runValidators: false, new: true }
+    )
+    res.status(200).json(thoughtData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 //delete single
 router.delete('/:id', async (req, res) => {
   try {
@@ -50,23 +50,18 @@ router.delete('/:id', async (req, res) => {
 });
 //create signle
 router.post('/', async (req, res) => {
-    try {
-      const thoughtData = await Thought.create(
-        {
-          thoughtText: req.body.thoughtText,
-          username: req.body.username,
-        }
-      );
-      await User.updateOne(
-        { _id: req.body.userId },
-        { $push: { thoughts: thoughtData._id } },
-        { runValidators: true, new: true },
-      )
-      res.status(200).json(thoughtData);
-    } catch (err) {
-      res.status(500).json(err);
-    };
-  });
+  try {
+    const thoughtData = await Thought.create(req.body)
+    await User.updateOne(
+      { _id: req.body.userId },
+      { $push: { thoughts: thoughtData._id } },
+      { runValidators: true, new: true }
+    )
+    res.status(200).json(thoughtData)
+  } catch (err) {
+    res.status(500).json(err)
+  }
+});
   // add reaction to thought by id
   router.post('/:thoughtId/reactions', async (req, res) => {
     try {

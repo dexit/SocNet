@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
 //Update Single 
 router.put('/:id', async (req, res) => {
     try {
-      const userData = await User.updateOne(
+      const userData = await User.findOneAndUpdate(
         { _id: req.params.id },
         { $set: req.body },
         { runValidators: true, new: true },
