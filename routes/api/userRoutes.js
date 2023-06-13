@@ -35,6 +35,14 @@ router.put('/:id', async (req, res) => {
   });
   
 //delete single
+router.delete('/:id', async (req, res) => {
+  try {
+    const userData = await User.findOneAndDelete({ _id: req.params.id });
+    res.status(200).json(userData);
+  } catch (err) {
+    res.status(500).json(err);
+  };
+});
 //create signle
 router.post('/', async (req, res) => {
   try {
@@ -43,5 +51,31 @@ router.post('/', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   };
+});
+// adding friends
+router.put('/:userId/friends/:friendId', async (req, res) => {
+  try {
+    const userData = await User.findOneAndUpdate(
+      { _id: req.params.userId },
+      { $push: { friends: req.params.friendId } },
+      { runValidators: true, new: true }
+    );
+    res.status(200).json(userData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+// removing friends
+router.delete('/:userId/friends/:friendId', async (req, res) => {
+  try {
+    const userData = await User.findOneAndUpdate(
+      { _id: req.params.userId },
+      { $pull: { friends: req.params.friendId } },
+      { runValidators: true, new: true }
+    );
+    res.status(200).json(userData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 module.exports = router;
