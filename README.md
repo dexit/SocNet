@@ -63,6 +63,15 @@ Example JSON body to create User
  
 ** Thoughts **
 - POST - ```/api/thought```
+Example Json Body to create a thought
+ 
+```
+[{ 
+"thoughtText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eros nec vestibulum sodales. Aliquam hendrerit diam ipsum, vel mollis lectus sodales in. Maecenas non lorem non ex cursus molestie vel vel velit.",
+		"username": "test_user"
+}]
+```
+ 
 - GET - ```/api/thought```
 - GET - ```/api/thought/:id```
 - PUT - ```/api/thought/:id```
