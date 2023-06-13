@@ -5,15 +5,22 @@
 ## Table of Contents
 
 - [SocNet](#socnet)
+  - [Walkthrough Video](#walkthrough-video)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [How to Contribute](#how-to-contribute)
-  - [Walkthrough Video](#walkthrough-video)
   - [Link](#link)
   - [Author](#author)
   - [License](#license)
+
+## Walkthrough Video
+
+
+https://github.com/dexit/SocNet/assets/6205151/02057812-0a47-460b-9693-5a4bb79ae406
+
+
 
 ## Description
 Social network backend api implementation
@@ -103,11 +110,11 @@ In order to use the program you will need to clone the repository from GitHub pr
 - *DELETE* -  ```/api/thought/:id/reactions/:id```
  
  
-#
+
 ## How to Contribute
 For and suggestions or contributions you can reach me at my email address or you can clone to code and edit it the way it will suite you the best.
-#
-## Walkthrough Video
+
+
 
 
 
