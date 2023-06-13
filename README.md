@@ -41,7 +41,8 @@ Start the server
 ```
 #
 ## Usage
-In order to use the program you will need to clone the repository from GitHub provided in the link below.
+In order to use the program you will need to clone the repository from GitHub provided in the link below. 
+ 
 ** Users **
 - POST - ```/api/user/```
  
