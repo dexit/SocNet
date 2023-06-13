@@ -21,5 +21,8 @@ router.get('/', async (req, res) => {
         res.status(500).json(err)
     }
 });
+//Update Single 
+//delete single
+//create signle
 
 module.exports = router;

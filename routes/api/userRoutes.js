@@ -22,12 +22,8 @@ router.get('/', async (req, res) => {
     }
 });
   
-//post
-
-//put
-
-//delete
-
-//update
+//Update Single 
+//delete single
+//create signle
 
 module.exports = router;

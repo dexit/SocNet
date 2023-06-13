@@ -1,0 +1,29 @@
+{
+    "name": "socnet",
+    "version": "1.0.0",
+    "description": "SocNet - project for bootcamp w18",
+    "main": "index.js",
+    "scripts": {
+      "seed": "node ./utils/seed.js",
+      "dev": "nodemon ./server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dexit/SocNet.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/dexit/SocNet/issues"
+    },
+    "homepage": "https://github.com/dexit/SocNet#readme",
+    "dependencies": {
+      "express": "^4.18.2",
+      "mongoose": "^7.2.4"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.22"
+    }
+  }
+  
