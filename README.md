@@ -43,34 +43,34 @@ Start the server
 ## Usage
 In order to use the program you will need to clone the repository from GitHub provided in the link below. 
  
-*Users*
-- POST - ```/api/user/```
+**Users**
+- *POST* - ```/api/user/```
  
-Example JSON body to create User
+**Example JSON body to create User**
 ``` 
 [{
 	"username": "testing_user",
 	"email": "new_user@domain.tld"
 }]
  ```
-- GET - ```/api/user```
-- GET - ```/api/user/:id```
-- PUT - ``` /api/user/:id ```
+- *GET* - ```/api/user```
+- *GET* - ```/api/user/:id```
+- *PUT* - ``` /api/user/:id ```
  
-Example Json body to update User
+**Example Json body to update User**
 ```
 [{	"email": "theNewemail@domain.tld" }]
 ```
-- DELETE - ``` /api/user/:id  ```
+- *DELETE* - ``` /api/user/:id  ```
  
-** Friends **
-- PUT - ```/api/user/:id/friends/:id```
-- DELETE - ```/api/user/:id/friends/:id```
+**Friends**
+- *PUT* - ```/api/user/:id/friends/:id```
+- *DELETE* - ```/api/user/:id/friends/:id```
  
-** Thoughts **
-- POST - ```/api/thought```
+**Thoughts**
+- *POST* - ```/api/thought```
  
-Example Json Body to create a thought
+**Example Json Body to create a thought**
 ```
 [{ 
 "thoughtText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
@@ -78,28 +78,28 @@ Example Json Body to create a thought
 }]
 ```
  
-- GET - ```/api/thought```
-- GET - ```/api/thought/:id```
-- PUT - ```/api/thought/:id```
+- *GET* - ```/api/thought```
+- *GET* - ```/api/thought/:id```
+- *PUT* - ```/api/thought/:id```
  
-Example Json Body to update a thought
+**Example Json Body to update a thought**
 ```
 [{
 "thoughtText": "This was pure nonses, and im sorry for anyone who read it XOXO."
 }]
 ```
-- DELETE - ```/api/thought/:id ```
+- *DELETE* - ```/api/thought/:id ```
  
-** Reactions **
-- POST - ```/api/thought/:id/reactions```
+**Reactions**
+- *POST* - ```/api/thought/:id/reactions```
  
-Example JSON BODY to create Reaction
+**Example JSON BODY to create Reaction**
 ``` [{
 	"reactionBody": "I AM IMMORTALLL !",
 	"username": "test_user",
 }]
 ```
-- DELETE -  ```/api/thought/:id/reactions/:id```
+- *DELETE* -  ```/api/thought/:id/reactions/:id```
  
  
 #
