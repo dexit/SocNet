@@ -48,13 +48,18 @@ In order to use the program you will need to clone the repository from GitHub pr
 Example JSON body to create User
 ``` 
 [{
-		"username": "testing_user",
-		"email": "new_user@domain.tld"
+	"username": "testing_user",
+	"email": "new_user@domain.tld"
 }]
  ```
 - GET - ```/api/user```
 - GET - ```/api/user/:id```
 - PUT - ``` /api/user/:id ```
+ 
+Example Json body to update User
+```
+[{	"email": "theNewemail@domain.tld" }]
+```
 - DELETE - ``` /api/user/:id  ```
  
 ** Friends **
@@ -63,23 +68,39 @@ Example JSON body to create User
  
 ** Thoughts **
 - POST - ```/api/thought```
-Example Json Body to create a thought
  
+Example Json Body to create a thought
 ```
 [{ 
-"thoughtText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eros nec vestibulum sodales. Aliquam hendrerit diam ipsum, vel mollis lectus sodales in. Maecenas non lorem non ex cursus molestie vel vel velit.",
-		"username": "test_user"
+"thoughtText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+"username": "test_user"
 }]
 ```
  
 - GET - ```/api/thought```
 - GET - ```/api/thought/:id```
 - PUT - ```/api/thought/:id```
+ 
+Example Json Body to update a thought
+```
+[{
+"thoughtText": "This was pure nonses, and im sorry for anyone who read it XOXO."
+}]
+```
 - DELETE - ```/api/thought/:id ```
  
 ** Reactions **
 - POST - ```/api/thought/:id/reactions```
+ 
+Example JSON BODY to create Reaction
+``` [{
+	"reactionBody": "I AM IMMORTALLL !",
+	"username": "test_user",
+}]
+```
 - DELETE -  ```/api/thought/:id/reactions/:id```
+ 
+ 
 #
 ## How to Contribute
 For and suggestions or contributions you can reach me at my email address or you can clone to code and edit it the way it will suite you the best.
