@@ -43,7 +43,7 @@ Start the server
 ## Usage
 In order to use the program you will need to clone the repository from GitHub provided in the link below. 
  
-** Users **
+*Users*
 - POST - ```/api/user/```
  
 Example JSON body to create User
