@@ -94,7 +94,8 @@ In order to use the program you will need to clone the repository from GitHub pr
 - *POST* - ```/api/thought/:id/reactions```
  
 **Example JSON BODY to create Reaction**
-``` [{
+``` 
+[{
 	"reactionBody": "I AM IMMORTALLL !",
 	"username": "test_user",
 }]
