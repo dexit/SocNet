@@ -1,5 +1,6 @@
-# ![banner](https://github.com/dexit/SocNet/assets/6205151/efc36441-e334-4da3-bd01-a8a9e8f6053f)
- 
+# ![banner](https://github.com/dexit/SocNet/assets/6205151/9a330b57-3359-4cba-8f0b-b5d4375d2339)
+
+
 
 ## Table of Contents
 
@@ -41,7 +42,35 @@ Start the server
 #
 ## Usage
 In order to use the program you will need to clone the repository from GitHub provided in the link below.
-
+** Users **
+- POST - ```/api/user/```
+ 
+Example JSON body to create User
+``` 
+[{
+		"username": "testing_user",
+		"email": "new_user@domain.tld"
+}]
+ ```
+- GET - ```/api/user```
+- GET - ```/api/user/:id```
+- PUT - ``` /api/user/:id ```
+- DELETE - ``` /api/user/:id  ```
+ 
+** Friends **
+- PUT - ```/api/users/:id/friends/:id```
+- DELETE - ```/api/users/:id/friends/:id```
+ 
+** Thoughts **
+- POST - ```/api/thoughts```
+- GET - ```/api/thoughts```
+- GET - ```/api/thoughts/:id```
+- PUT - ```/api/thoughts/:id```
+- DELETE - ```/api/thoughts/:id ```
+ 
+** Reactions **
+- POST - ```/api/thoughts/:id/reactions```
+- DELETE -  ```/api/thoughts/:id/reactions```
 #
 ## How to Contribute
 For and suggestions or contributions you can reach me at my email address or you can clone to code and edit it the way it will suite you the best.
